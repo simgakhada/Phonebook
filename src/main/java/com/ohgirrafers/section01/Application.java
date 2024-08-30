@@ -1,12 +1,14 @@
 package com.ohgirrafers.section01;
 
 import com.ohgirrafers.section01.controller.PhoneBookController;
+import com.ohgirrafers.section01.validation.Validation;
 
 import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Validation validation = new Validation();
         PhoneBookController phoneBookController = new PhoneBookController();
         while (true) {
             System.out.println("사용할 기능을 선택해주세요");
@@ -22,7 +24,28 @@ public class Application {
 
             switch (choice) {
                 case 1: phoneBookController.InsertInformation(); break;
-                case 2:  break;
+                case 2:
+                    String samplePhoneNum = "01022343434"; // v true at 1, d false
+                    String samplePhoneNum2 = "01012345678"; // v false at 1
+                    String samplePhoneNum3 = "0215771577"; // v true at 2
+                    String samplePhoneNum4 = "028007070"; // v true at 3
+                    String samplePhoneNum5 = "03122222222"; // v true at 4
+                    String samplePhoneNum6 = "04299999999"; // v true at 5
+                    String sampleEmail = "s2322@naver.com"; // v true, d false
+                    String sampleEmail2 = "sample@sample.com"; // v true, d true
+                    String sampleEmail3 = "sample"; // v false
+                    String sampleBirth = "20230229";
+                    boolean vCheckEmail = validation.vCheckEmail(sampleEmail2);
+                    boolean dCheckEmail = validation.dCheckEmail(sampleEmail2);
+                    boolean vCheckPN = validation.vCheckPN(samplePhoneNum4);
+                    boolean dCheckPN = validation.dCheckPN(samplePhoneNum2);
+                    boolean vCheckBirth = validation.vCheckBirth(sampleBirth);
+                    // System.out.println("vCheckEmail = " + vCheckEmail);
+                    // System.out.println("dCheckEmail = " + dCheckEmail);
+                    // System.out.println("vCheckPN = " + vCheckPN);
+                    // System.out.println("dCheckPN = " + dCheckPN);
+                    System.out.println("vCheckBirth = " + vCheckBirth);
+                    break;
                 case 3:  break;
                 case 4:  break;
                 case 5:  break;

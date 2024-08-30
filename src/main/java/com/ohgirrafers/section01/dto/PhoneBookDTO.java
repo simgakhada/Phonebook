@@ -2,7 +2,7 @@ package com.ohgirrafers.section01.dto;
 
 public class PhoneBookDTO {
     private String name;
-    private int phone;
+    private String phone;
     private String email;
     private int birth;
     private int no;
@@ -26,11 +26,11 @@ public class PhoneBookDTO {
         this.name = name;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
