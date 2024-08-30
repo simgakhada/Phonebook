@@ -12,7 +12,6 @@ package com.ohgirrafers.section01.validation;
  *  아래 메소드 중 단 하나라도 false를 반환할 경우
  *  유효성 검사에 실패한 것으로 간주하고,
  *  입력된 정보를 반려한다.
- *  유효성 검사 탈락 사유를 추가할 지는 회의 후 결정할 것.
  */
 import javax.mail.internet.*;
 import java.io.FileInputStream;

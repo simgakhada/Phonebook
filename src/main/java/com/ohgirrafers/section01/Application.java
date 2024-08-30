@@ -1,6 +1,7 @@
 package com.ohgirrafers.section01;
 
 import com.ohgirrafers.section01.controller.PhoneBookController;
+import com.ohgirrafers.section01.setting.Setting;
 import com.ohgirrafers.section01.validation.Validation;
 
 import java.util.Scanner;
@@ -9,6 +10,7 @@ public class Application {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Validation validation = new Validation();
+        Setting setting = new Setting();
         PhoneBookController phoneBookController = new PhoneBookController();
         while (true) {
             System.out.println("사용할 기능을 선택해주세요");
@@ -24,7 +26,6 @@ public class Application {
             int choice = sc.nextInt();
             sc.nextLine();
             switch (choice) {
-<<<<<<< HEAD
                 case 1: phoneBookController.InsertInformation(); break;
                 case 2:
                     String samplePhoneNum = "01022343434"; // v true at 1, d false
@@ -48,12 +49,26 @@ public class Application {
                     // System.out.println("dCheckPN = " + dCheckPN);
                     System.out.println("vCheckBirth = " + vCheckBirth);
                     break;
-=======
-                case 1:  phoneBookController.InsertInformation(); break;
-                case 2:  break;
->>>>>>> dec2777c261e9fe90e8a7c6de91613e30a21e787
-                case 3:  break;
-                case 4:  break;
+                case 3:
+                    System.out.print("Change search condition: ");
+                    int a = sc.nextInt();
+                    setting.saveSearchCondition(a);
+
+                    System.out.print("Change sort condition: ");
+                    int b = sc.nextInt();
+                    setting.saveSortCondition(b);
+
+                    break;
+                case 4:
+                    int c = 0;
+                    c = setting.loadSearchCondition();
+                    System.out.println("Load search condition = " + c);
+
+                    int d = 0;
+                    d = setting.loadSortCondition();
+                    System.out.println("Load sort condition = " + d);
+                    break;
+
                 case 5:  break;
                 case 6:  break;
                 case 7:  break;
