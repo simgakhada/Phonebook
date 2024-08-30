@@ -2,9 +2,9 @@ package com.ohgirrafers.section01.dto;
 
 public class PhoneBookDTO {
     private String name;
-    private int phone;
+    private String phone;
     private String email;
-    private int birth;
+    private String birth;
     private int no;
 
     @Override
@@ -26,11 +26,11 @@ public class PhoneBookDTO {
         this.name = name;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -42,11 +42,11 @@ public class PhoneBookDTO {
         this.email = email;
     }
 
-    public int getBirth() {
+    public String getBirth() {
         return birth;
     }
 
-    public void setBirth(int birth) {
+    public void setBirth(String birth) {
         this.birth = birth;
     }
 
