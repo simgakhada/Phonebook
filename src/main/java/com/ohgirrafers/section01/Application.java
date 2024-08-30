@@ -20,9 +20,11 @@ public class Application {
             System.out.println("6. 통계");
             System.out.println("7. 설정");
             System.out.println("9. 프로그램 종료");
-            int choice = sc.nextInt();
 
+            int choice = sc.nextInt();
+            sc.nextLine();
             switch (choice) {
+<<<<<<< HEAD
                 case 1: phoneBookController.InsertInformation(); break;
                 case 2:
                     String samplePhoneNum = "01022343434"; // v true at 1, d false
@@ -46,6 +48,10 @@ public class Application {
                     // System.out.println("dCheckPN = " + dCheckPN);
                     System.out.println("vCheckBirth = " + vCheckBirth);
                     break;
+=======
+                case 1:  phoneBookController.InsertInformation(); break;
+                case 2:  break;
+>>>>>>> dec2777c261e9fe90e8a7c6de91613e30a21e787
                 case 3:  break;
                 case 4:  break;
                 case 5:  break;

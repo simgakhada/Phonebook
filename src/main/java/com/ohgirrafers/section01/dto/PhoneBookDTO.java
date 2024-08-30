@@ -4,7 +4,7 @@ public class PhoneBookDTO {
     private String name;
     private String phone;
     private String email;
-    private int birth;
+    private String birth;
     private int no;
 
     @Override
@@ -42,11 +42,11 @@ public class PhoneBookDTO {
         this.email = email;
     }
 
-    public int getBirth() {
+    public String getBirth() {
         return birth;
     }
 
-    public void setBirth(int birth) {
+    public void setBirth(String birth) {
         this.birth = birth;
     }
 
