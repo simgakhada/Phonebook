@@ -21,8 +21,17 @@
     )
 
 </entry>
+<entry key="updateInfo">
+    UPDATE CONTRACT
+    SET NAME = ? , PHONE = ?, EMAIL = ?, ADDRESS = ?, BIRTH = ?, INGROUP = ?
+    WHERE NAME = ? ;
 
+</entry>
+<entry key="deleteInfo">
+    DELETE FROM CONTRACT
+    WHERE NAME = ?;
 
+</entry>
 
 
 

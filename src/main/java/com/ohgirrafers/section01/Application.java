@@ -18,10 +18,11 @@ public class Application {
             System.out.println("6. 통계");
             System.out.println("7. 설정");
             System.out.println("9. 프로그램 종료");
-            int choice = sc.nextInt();
 
+            int choice = sc.nextInt();
+            sc.nextLine();
             switch (choice) {
-                case 1: phoneBookController.InsertInformation(); break;
+                case 1:  phoneBookController.InsertInformation(); break;
                 case 2:  break;
                 case 3:  break;
                 case 4:  break;
