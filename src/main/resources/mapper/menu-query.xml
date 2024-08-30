@@ -21,16 +21,27 @@
     )
 
 </entry>
+    <entry key="duplicateCheckPN">
+        SELECT
+        PHONE
+        FROM CONTRACT
+        WHERE PHONE LIKE ?
+    </entry>
+    <entry key="duplicateCheckEmail">
+        SELECT
+        EMAIL
+        FROM CONTRACT
+        WHERE EMAIL LIKE ?
+    </entry>
+=======
 <entry key="updateInfo">
     UPDATE CONTRACT
     SET NAME = ? , PHONE = ?, EMAIL = ?, ADDRESS = ?, BIRTH = ?, INGROUP = ?
     WHERE NAME = ? ;
-
 </entry>
 <entry key="deleteInfo">
     DELETE FROM CONTRACT
     WHERE NAME = ?;
-
 </entry>
 
 
