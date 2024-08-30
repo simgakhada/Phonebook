@@ -21,7 +21,6 @@
     )
 
 </entry>
-<<<<<<< HEAD
     <entry key="duplicateCheckPN">
         SELECT
         PHONE
@@ -39,13 +38,10 @@
     UPDATE CONTRACT
     SET NAME = ? , PHONE = ?, EMAIL = ?, ADDRESS = ?, BIRTH = ?, INGROUP = ?
     WHERE NAME = ? ;
-
 </entry>
 <entry key="deleteInfo">
     DELETE FROM CONTRACT
     WHERE NAME = ?;
->>>>>>> dec2777c261e9fe90e8a7c6de91613e30a21e787
-
 </entry>
 
 
